@@ -1,157 +1,104 @@
-# Ventrai
+# 🚀 Ventrai - AI Powered Website & App Builder
 
-AI-Powered Development Assistant
+Ventrai ek Advanced AI Website & App Builder hai jo aapko Professional UI, Modern Design aur Production-ready Code sirf 1 prompt me generate karke deta hai.
 
-## Description
+---
 
-Ventrai is a comprehensive AI-powered development environment that provides an integrated workspace for coding, debugging, and collaboration. Built with modern web technologies, it offers a seamless experience for developers to build applications with AI assistance.
+## ✨ Key Features
 
-## Features
+* ⚡ **Ultra Fast Development** – Sirf prompt likho aur deploy-ready website/app instantly build karo
+* 🎨 **Stunning UI & Animations** – Modern UI components & smooth animations auto-generate
+* 📱 **Fully Responsive** – Mobile, Tablet & Desktop ke liye adaptive layout
+* 🧠 **AI Smart Understanding** – Complex requirements ko deeply understand karta hai
+* 🧩 **Drag & Edit System** – Real-time editing & preview support
+* 💾 **Clean & Production Ready Code** – Scalable & maintainable structure
+* 🔐 **Secure Architecture** – Strong backend & user management
+* ☁️ **Automatic Deployment** – 1 click publish
 
-- **AI-Powered Code Assistance**: Integrated with multiple AI providers including OpenAI, Anthropic, Google Gemini, and more
-- **Code Editor**: Advanced code editor with syntax highlighting, auto-completion, and multi-language support
-- **Terminal Integration**: Built-in terminal for running commands and scripts
-- **Git Integration**: Full Git support with GitHub and GitLab integration
-- **WebContainer Support**: Run code in isolated containers
-- **Multi-Platform**: Available as web app and desktop app (Electron)
-- **MCP (Model Context Protocol)**: Support for various AI models and tools
-- **Deployment**: Easy deployment to Vercel, Netlify, and other platforms
+---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **Frontend**: React, Remix, TypeScript
-- **Styling**: Tailwind CSS, UnoCSS, SCSS
-- **Code Editor**: CodeMirror
-- **Terminal**: xterm.js
-- **AI Integration**: Multiple providers (OpenAI, Anthropic, Google, etc.)
-- **Backend**: Cloudflare Workers, Remix
-- **Desktop**: Electron
-- **Database**: Supabase (optional)
-- **Deployment**: Cloudflare Pages, Docker
+| Layer           | Technology                              |
+| --------------- | --------------------------------------- |
+| Frontend Engine | React / Next.js / Remix + TailwindCSS   |
+| Backend         | Node.js + Supabase / Custom API support |
+| Database        | PostgreSQL / Supabase storage           |
+| AI Models       | Gemini / GPT / Claude supported         |
+| UI Animations   | Framer Motion                           |
+| Build Tool      | Vite                                    |
 
-## Installation
+---
 
-### Prerequisites
+## 🧾 How It Works
 
-- Node.js >= 18.18.0
-- pnpm (recommended) or npm
+1. Login / Create a new project
+2. Ek prompt likho jisme website ya app ka description ho
+3. AI automatically architecture, UI, routing & code generate karega
+4. Real-time edit karo ya rebuild karo
+5. Ek click me deploy karo
 
-### Setup
+---
 
-1. Clone the repository:
+## 📦 Installation
+
 ```bash
-git clone https://github.com/venom001e/Ventrai-Web.git
+git clone <repo-url>
 cd ventrai
+npm install
+npm run dev
 ```
 
-2. Install dependencies:
-```bash
-pnpm install
+Open: `http://localhost:5173/`
+
+---
+
+## 📚 Example Prompt
+
+```
+Create a modern ecommerce website with hero slider, product grid, animated buttons,
+and checkout page using professional UI. Use clean minimal style like top brands.
 ```
 
-3. Copy environment file:
-```bash
-cp .env.example .env
-```
+---
 
-4. Configure your environment variables in `.env`
+## 🧩 Modules Included
 
-5. Start development server:
-```bash
-pnpm run dev
-```
+* Website Builder
+* App Builder
+* Component Library
+* Code Exporter
+* AI Chat Assistant
+* Hosting & Deployment Tools
 
-## Environment Variables
+---
 
-Create a `.env` file with the following variables:
+## 🔥 Upcoming Features
 
-```env
-# AI Provider API Keys (choose your preferred providers)
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key
-GOOGLE_API_KEY=your_google_key
-# ... other provider keys
+* AI Logo & Branding Generator
+* Template Marketplace
+* Team Collaboration
+* Browser-based Code Editor
 
-# Optional: Supabase for data persistence
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_supabase_key
+---
 
-# Optional: GitHub/GitLab integration
-GITHUB_TOKEN=your_github_token
-GITLAB_TOKEN=your_gitlab_token
-```
+## 🤝 Contributing
 
-## Usage
+PRs are welcome! For major changes, please open an issue first to discuss.
 
-### Web Version
+---
 
-```bash
-pnpm run dev
-```
+## 💌 Contact
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+**Founder:** Danish (Ganesh)
+**Email:** [support@ventrai.ai](mailto:support@ventrai.ai)
 
-### Desktop Version
+---
 
-```bash
-pnpm run electron:dev
-```
+## ⭐ Support
 
-### Production Build
+Agar aapko Ventrai pasand aaye, Star ⭐ dena mat bhoolna!
 
-```bash
-pnpm run build
-pnpm run start
-```
+---
 
-## Docker
-
-### Development
-
-```bash
-pnpm run dockerbuild
-pnpm run dockerrun
-```
-
-### Production
-
-```bash
-pnpm run dockerbuild:prod
-```
-
-## Scripts
-
-- `pnpm run dev` - Start development server
-- `pnpm run build` - Build for production
-- `pnpm run test` - Run tests
-- `pnpm run lint` - Lint code
-- `pnpm run typecheck` - Type checking
-- `pnpm run electron:dev` - Start Electron development
-- `pnpm run electron:build:win` - Build Windows desktop app
-- `pnpm run electron:build:mac` - Build macOS desktop app
-- `pnpm run electron:build:linux` - Build Linux desktop app
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit changes: `git commit -am 'Add your feature'`
-4. Push to branch: `git push origin feature/your-feature`
-5. Submit a pull request
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## Support
-
-For support and questions:
-- Create an issue on GitHub
-- Check the documentation in the `docs/` folder
-
-## Acknowledgments
-
-- Built with [Remix](https://remix.run/)
-- Code editor powered by [CodeMirror](https://codemirror.net/)
-- Terminal by [xterm.js](https://xtermjs.org/)
-- Icons from [Phosphor Icons](https://phosphoricons.com/)
+### © 2025 Ventrai AI Builder – All Rights Reserved
